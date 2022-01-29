@@ -507,7 +507,7 @@ h6 {
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
-  top: 65%;
+  top: 50%;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
   margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
@@ -1944,45 +1944,8 @@ textarea.input {
 @media (max-width: 47.99875em) {
   .calculate-block__text {
     padding-bottom: 0;
-text-align: center;
+    text-align: center;
   }
-}
-
-.calculate-block__slider {
-  max-width: 22.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 1350px) {
-  .calculate-block__slider {
-    padding-top: 3.125rem;
-    padding-bottom: 1.875rem;
-  }
-}
-
-@media (max-width: 29.99875em) {
-  .calculate-block__slider {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-.calculate-block__swiper {
-  max-width: 380px;
-}
-
-.calculate-block__title {
-  padding-top: clamp(1.25rem, 2.6vw, 3.125rem);
-  max-width: 25rem;
-  font-family: 'Uni Neue';
-  font-size: 1.125rem;
-  line-height: 1.27273em;
-  font-weight: 500;
-  color: #282728;
-  text-align: center;
-  padding-bottom: 1.375rem;
 }
 
 .spoller-item-calback__body {
@@ -2050,6 +2013,49 @@ text-align: center;
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
+}
+
+.calculate-block__license {
+  padding-left: 1.875rem;
+}
+
+.calculate-block__title {
+  padding-top: clamp(1.25rem, 2.6vw, 3.125rem);
+  font-family: 'Uni Neue';
+  font-size: 1.125rem;
+  line-height: 1.27273em;
+  font-weight: 600;
+  color: #282728;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculate-block__slider {
+  max-width: 23.75rem;
+  padding: 10px 1.25rem;
+}
+
+@media (max-width: 1350px) {
+  .calculate-block__slider {
+    padding-top: clamp(1.25rem, 2.5vw, 3.125rem);
+    padding-bottom: 1.875rem;
+  }
+}
+
+@media (max-width: 29.99875em) {
+  .calculate-block__slider {
+    padding: 10px 50px;
+    margin: 0px 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .calculate-block__slider {
+    padding: 10px 18px;
+    margin: 0px 60px;
+  }
 }
 
 .main-background {
