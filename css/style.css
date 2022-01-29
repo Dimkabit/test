@@ -1944,6 +1944,7 @@ textarea.input {
 @media (max-width: 47.99875em) {
   .calculate-block__text {
     padding-bottom: 0;
+text-align: center;
   }
 }
 
